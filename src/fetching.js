@@ -40,7 +40,7 @@ const addMovieToTheList = (searchResults, movieList) => searchResults.map(movie 
 
 const fetchApi = async ({ search, printIn }) => {
 
-    const api = `http://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`
+    const api = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${search}`
 
     const response = await fetch(api, {
         method: 'get',
